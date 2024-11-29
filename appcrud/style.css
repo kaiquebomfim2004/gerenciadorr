@@ -1,0 +1,251 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+/* Container principal */
+.container {
+    margin-top: 100px; /* Para ajustar ao conteúdo abaixo da navbar fixa */
+}
+
+/* Títulos */
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Botões */
+.btn {
+    border-radius: 0;
+    font-size: 14px;
+}
+
+/* Estilos para o filtro de tarefas */
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Estilos dos cards das tarefas */
+.task-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item span {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.task-item small {
+    color: #777;
+}
+
+.task-item .float-right {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilos para cada status de tarefa */
+
+/* Tarefa pendente */
+.pendente {
+    background-color: #ffc107 !important;
+    color: #212529;
+}
+
+.pendente:hover {
+    background-color: #e0a800 !important;
+}
+
+/* Tarefa vencida */
+.vencida {
+    background-color: #dc3545 !important;
+    color: #ffffff;
+}
+
+.vencida:hover {
+    background-color: #c82333 !important;
+}
+
+/* Tarefa concluída */
+.concluida {
+    background-color: #28a745 !important;
+    color: #ffffff;
+}
+
+.concluida:hover {
+    background-color: #218838 !important;
+}
+
+/* Estilos dos formulários */
+form {
+    margin-bottom: 30px;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+}
+
+/* Estilos da barra de navegação */
+.nav-tabs {
+    margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 0;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #218838;
+}
+
+/* Lista de anotações */
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.list-group-item .float-right {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilos da tab (anotações e tarefas) */
+.tab-content {
+    padding-top: 20px;
+}
+
+/* Divisores */
+.divider {
+    margin-top: 30px;
+    border-top: 2px solid #ddd;
+}
+
+/* Formatação do footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .task-item .float-right {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
